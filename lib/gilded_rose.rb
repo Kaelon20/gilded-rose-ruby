@@ -10,8 +10,11 @@ class GildedRose
   def tick
     case name 
     when'Normal Item'
+      return normal_tick
     when 'Aged Brie'
+      return brie_tick
     when 'Sulfuras, Hand of Ragnaros'
+      return sulfuras_tick
     when 'Backstage passes to a TAFKAL80ETC concert'
       return backstage_tick
     end
